@@ -222,19 +222,6 @@ The dashboard will include:
 
 ---
 
-# Future Improvements
-
-Future versions of the project may include:
-
-- Seasonal forecasting models
-- ARIMA
-- Prophet
-- Machine learning based forecasting
-- Automated report generation
-- Scheduled forecast updates
-
----
-
 # Disclaimer
 
 This repository has been developed using publicly available data for learning and portfolio purposes.
