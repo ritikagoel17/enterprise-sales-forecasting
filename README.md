@@ -97,6 +97,7 @@ All four metrics are reported to compare model performance.
 # Forecast Reliability
 Once the best model is selected, forecasting reliability is classified using WAPE.
 | WAPE | Reliability |
+|------|----------|
 | <10% | High |
 | 10–20% | Moderate |
 | 20–30% | Low |
