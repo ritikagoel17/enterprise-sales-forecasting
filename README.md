@@ -179,7 +179,6 @@ enterprise-sales-forecasting
 │
 ├── data/
 │   ├── train.csv
-│   └── README.md
 │
 ├── src/
 │   ├── preprocessing.py
@@ -239,7 +238,5 @@ Future versions of the project may include:
 # Disclaimer
 
 This repository has been developed using publicly available data for learning and portfolio purposes.
-
 It does not contain confidential company data, proprietary reports, SAP objects, SQL queries or internal business information.
-
 The forecasting methodology presented here is an independent implementation using public data.
