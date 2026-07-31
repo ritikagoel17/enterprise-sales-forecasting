@@ -1,6 +1,21 @@
-# Enterprise Sales Forecasting
+# Enterprise Sales Forecasting System
 
-A Python-based sales forecasting project that predicts future sales using historical sales data. The project benchmarks multiple time-series forecasting models, evaluates their performance using forecasting accuracy metrics, and automatically selects the best-performing model for each state.
+### Python • Time Series Forecasting • Power BI
+
+A Python-based sales forecasting project that predicts future sales using historical sales data. The project benchmarks multiple time-series forecasting models, evaluates their performance using forecasting accuracy metrics, and automatically selects the best-performing forecasting model for each state.
+
+> **Note:** This project uses only publicly available data. No confidential company data, SAP data, SQL queries, proprietary reports, or internal business information are included.
+
+---
+
+# Project Highlights
+
+- Built an end-to-end sales forecasting pipeline using Python.
+- Processed approximately **9,800 retail transactions** across **45 U.S. states**.
+- Evaluated **7 forecasting models** for every state.
+- Automatically selected the best-performing model using **WAPE**.
+- Generated dashboard-ready CSV outputs.
+- Built a **two-page interactive Power BI dashboard** for executive reporting and forecast analysis.
 
 ---
 
@@ -8,21 +23,21 @@ A Python-based sales forecasting project that predicts future sales using histor
 
 This project demonstrates an end-to-end sales forecasting workflow built using Python and a publicly available retail sales dataset.
 
-The objective is to build an automated forecasting pipeline that transforms raw sales transactions into reliable monthly forecasts using historical sales patterns.
+The objective is to transform raw sales transactions into reliable monthly sales forecasts using historical sales patterns.
 
-Unlike many forecasting projects that rely on a single model, this project compares several forecasting techniques for every state and automatically selects the model with the lowest forecasting error.
+Unlike many forecasting projects that rely on a single forecasting technique, this project compares multiple forecasting models for every state and automatically selects the model that produces the lowest forecasting error.
 
-> **Note:** This project uses only publicly available data. No confidential company data, reports, SAP objects, SQL queries, or proprietary business information are included.
+The final outputs are exported as CSV files and visualized through an interactive Power BI dashboard.
 
 ---
 
 # Business Problem
 
-Businesses operating across multiple locations need reliable sales forecasts for planning production, inventory, procurement and sales activities.
+Businesses operating across multiple locations require accurate sales forecasts for production planning, inventory management, procurement, budgeting, and sales planning.
 
 Many organizations still prepare forecasts manually using spreadsheets or assumptions, making the forecasting process inconsistent across locations.
 
-This project automates that process by:
+This project automates that workflow by:
 
 - Cleaning historical sales data
 - Aggregating monthly sales
@@ -31,7 +46,7 @@ This project automates that process by:
 - Classifying forecast reliability
 - Producing dashboard-ready outputs
 
-The forecasts in this project are generated **only from historical sales data**. External factors such as market trends, promotions, holidays, competitor activity or economic indicators are **not included** in the forecasting models.
+The forecasts in this project are generated **only from historical sales data**. External factors such as promotions, holidays, competitor activity, weather, or economic indicators are **not included**.
 
 ---
 
@@ -91,42 +106,42 @@ E[Model Evaluation]
 
 # Forecasting Models
 
-The forecasting engine evaluates seven different forecasting approaches.
+The forecasting engine evaluates seven forecasting techniques:
 
 - Historical Average
-- Last Value
+- Last Value (Naïve)
 - 3-Month Moving Average
 - 6-Month Moving Average
 - Simple Exponential Smoothing
 - Holt Linear Trend
 - Holt Damped Trend
 
-Each state is evaluated independently because sales behaviour differs across locations.
+Each state is evaluated independently because sales patterns differ across locations.
 
-Rather than assuming one model performs best everywhere, the pipeline selects the model that produces the lowest forecasting error for each state.
+Rather than assuming one forecasting model performs best everywhere, the pipeline automatically selects the model with the lowest forecasting error for each state.
 
 ---
 
 # Evaluation Metrics
 
-Every forecasting model is evaluated using four different metrics.
+Each forecasting model is evaluated using four forecasting metrics.
 
 | Metric | Purpose |
 |---------|----------|
 | MAE | Measures average forecasting error |
-| RMSE | Gives greater importance to larger forecasting errors |
-| MAPE | Measures forecasting error as a percentage |
-| WAPE | Used to select the best forecasting model |
+| RMSE | Penalizes larger forecasting errors |
+| MAPE | Percentage forecasting error |
+| WAPE | Final model selection metric |
 
-All four metrics are reported to compare model performance.
+All four metrics are reported for every model.
 
-**WAPE is used as the final model-selection metric** because it provides a stable comparison across states with different sales volumes.
+**WAPE is used as the final model-selection metric because it enables consistent comparison across states with different sales volumes.**
 
 ---
 
 # Forecast Reliability
 
-Once the best model is selected, forecasting reliability is classified using WAPE.
+Once the best forecasting model is selected, reliability is classified using WAPE.
 
 | WAPE | Reliability |
 |-------|-------------|
@@ -135,13 +150,13 @@ Once the best model is selected, forecasting reliability is classified using WAP
 | 20–30% | Low |
 | >30% | Very Low |
 
-This provides a simple indication of how reliable each forecast is.
+This provides a simple business-friendly indication of forecast quality.
 
 ---
 
 # Dataset
 
-This project uses the **Superstore Sales Dataset** available on Kaggle.
+This project uses the **Superstore Sales Dataset** available publicly on Kaggle.
 
 Fields used:
 
@@ -151,11 +166,11 @@ Fields used:
 - Region
 - Category
 
-The dataset is used only for demonstrating the forecasting methodology with public data.
+The dataset is used only to demonstrate the forecasting methodology with publicly available data.
 
 ---
 
-# Technologies
+# Technologies Used
 
 - Python
 - Pandas
@@ -171,59 +186,116 @@ The dataset is used only for demonstrating the forecasting methodology with publ
 
 # Repository Structure
 
-```
+```text
 enterprise-sales-forecasting
 │
-├── README.md
-├── requirements.txt
+├── dashboard
+│   └── Sales Forecasting Model Project.pbix
 │
-├── data/
-│   ├── train.csv
+├── data
+│   └── train.csv
 │
-├── src/
-│   ├── preprocessing.py
-│   ├── forecasting.py
-│   ├── evaluation.py
-│   └── main.py
+├── images
+│   ├── Executive_Summary.png
+│   └── Forecast_Analysis.png
 │
-├── notebooks/
-│   └── Sales_Forecasting.ipynb
-│
-├── output/
-│   ├── forecast_results.csv
+├── output
+│   ├── Plots
 │   ├── best_model.csv
-│   ├── reliability_table.csv
+│   ├── forecast_results.csv
 │   ├── model_comparison.csv
-│   └── forecast_plot.png
+│   ├── monthly_preprocessed_data.csv
+│   ├── skipped_entities.csv
+│   └── state_summary.csv
 │
-├── dashboard/
-│   └── ForecastDashboard.pbix
+├── src
+│   └── enterprise_sales_forecasting.py
 │
-├── images/
-│
-└── docs/
+├── .gitignore
+├── LICENSE
+├── README.md
+└── requirements.txt
 ```
 
 ---
 
 # Dashboard
 
-The output files generated by the forecasting pipeline can be directly imported into Power BI.
+## Executive Summary
 
-The dashboard will include:
+![Executive Summary](images/Executive_Summary.png)
 
-- Monthly Sales Trend
-- Forecast vs Actual
-- Best Model by State
-- Forecast Reliability
-- WAPE Analysis
-- State-wise Sales Performance
+---
+
+## Forecast Analysis
+
+![Forecast Analysis](images/Forecast_Analysis.png)
+
+The Power BI dashboard provides:
+
 - Executive Summary
+- Forecast vs Actual Sales
+- Best Model Distribution
+- Forecast Accuracy by State
+- Forecast Reliability Analysis
+- Model Performance Comparison
+- Interactive State Filtering
+
+---
+
+# Results
+
+- Successfully processed **45 eligible U.S. states**.
+- Evaluated **7 forecasting models** for every state.
+- Automatically selected the best-performing model using **WAPE**.
+- Generated forecast outputs and model comparison reports.
+- Built a two-page interactive Power BI dashboard for business reporting.
+
+---
+
+# Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/your-username/enterprise-sales-forecasting.git
+```
+
+Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the forecasting pipeline
+
+```bash
+python src/enterprise_sales_forecasting.py
+```
+
+---
+
+# Future Improvements
+
+- Add ARIMA and SARIMA forecasting models.
+- Integrate Facebook Prophet forecasting.
+- Include external variables such as holidays and promotions.
+- Connect directly to SAP or SQL databases.
+- Deploy dashboards using Power BI Service.
+- Develop a web-based forecasting application.
+
+---
+
+# License
+
+This project is licensed under the MIT License.
 
 ---
 
 # Disclaimer
 
-This repository has been developed using publicly available data for learning and portfolio purposes.
-It does not contain confidential company data, proprietary reports, SAP objects, SQL queries or internal business information.
-The forecasting methodology presented here is an independent implementation using public data.
+This repository has been developed using publicly available data for educational and portfolio purposes.
+
+It does **not** contain confidential company data, SAP data, SQL queries, proprietary reports, internal dashboards, or business-sensitive information.
+
+The forecasting methodology presented here is an independent implementation built using publicly available data.
