@@ -1,0 +1,170 @@
+2026-07-30 14:43:50 | INFO | ================================================================================
+2026-07-30 14:43:50 | INFO | ENTERPRISE SALES FORECASTING PIPELINE STARTED
+2026-07-30 14:43:50 | INFO | ================================================================================
+2026-07-30 14:43:50 | INFO | Input file: C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\train.csv
+2026-07-30 14:43:50 | INFO | Output folder: C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\output
+2026-07-30 14:43:50 | INFO | Minimum history: 24 months
+2026-07-30 14:43:50 | INFO | Test period: 6 months
+2026-07-30 14:43:50 | INFO | Loading input file: C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\train.csv
+2026-07-30 14:43:50 | INFO | Loaded 9800 rows and 18 columns.
+2026-07-30 14:43:50 | INFO | Input source selected: train.csv
+2026-07-30 14:43:50 | INFO | Detected date column: Order Date
+2026-07-30 14:43:50 | INFO | Detected entity column: State
+2026-07-30 14:43:50 | INFO | Detected sales column: Sales
+2026-07-30 14:43:50 | INFO | Date parsing success rate: 100.00% | dayfirst=True
+2026-07-30 14:43:50 | INFO | Removed 0 invalid rows.
+2026-07-30 14:43:50 | INFO | Generated 1245 monthly entity records.
+2026-07-30 14:43:50 | WARNING | Skipping 'District of Columbia': only 22 monthly observations.
+2026-07-30 14:43:50 | WARNING | Skipping 'North Dakota': only 8 monthly observations.
+2026-07-30 14:43:50 | WARNING | Skipping 'West Virginia': only 5 monthly observations.
+2026-07-30 14:43:50 | WARNING | Skipping 'Wyoming': only 1 monthly observations.
+2026-07-30 14:43:50 | INFO | Eligible entities: 45
+2026-07-30 14:43:50 | INFO | Skipped entities: 4
+2026-07-30 14:43:50 | INFO | Processing entity 1 of 45: Alabama
+2026-07-30 14:43:50 | INFO | Entity: Alabama | Best Model: Last Value (Naive) | WAPE: 101.00% | Reliability: Very Low
+2026-07-30 14:43:50 | INFO | Processing entity 2 of 45: Arizona
+2026-07-30 14:43:50 | INFO | Entity: Arizona | Best Model: Last Value (Naive) | WAPE: 54.83% | Reliability: Very Low
+2026-07-30 14:43:50 | INFO | Processing entity 3 of 45: Arkansas
+2026-07-30 14:43:50 | INFO | Entity: Arkansas | Best Model: Last Value (Naive) | WAPE: 99.66% | Reliability: Very Low
+2026-07-30 14:43:50 | INFO | Processing entity 4 of 45: California
+2026-07-30 14:43:50 | INFO | Entity: California | Best Model: Holt Linear Trend | WAPE: 19.18% | Reliability: Moderate
+2026-07-30 14:43:50 | INFO | Processing entity 5 of 45: Colorado
+2026-07-30 14:43:50 | INFO | Entity: Colorado | Best Model: Last Value (Naive) | WAPE: 95.79% | Reliability: Very Low
+2026-07-30 14:43:50 | INFO | Processing entity 6 of 45: Connecticut
+2026-07-30 14:43:50 | INFO | Entity: Connecticut | Best Model: Historical Average | WAPE: 99.05% | Reliability: Very Low
+2026-07-30 14:43:50 | INFO | Processing entity 7 of 45: Delaware
+2026-07-30 14:43:50 | INFO | Entity: Delaware | Best Model: Simple Exponential Smoothing | WAPE: 100.00% | Reliability: Very Low
+2026-07-30 14:43:50 | INFO | Processing entity 8 of 45: Florida
+2026-07-30 14:43:51 | INFO | Entity: Florida | Best Model: Six Month Moving Average | WAPE: 56.03% | Reliability: Very Low
+2026-07-30 14:43:51 | INFO | Processing entity 9 of 45: Georgia
+2026-07-30 14:43:51 | INFO | Entity: Georgia | Best Model: Historical Average | WAPE: 164.93% | Reliability: Very Low
+2026-07-30 14:43:51 | INFO | Processing entity 10 of 45: Idaho
+2026-07-30 14:43:51 | INFO | Entity: Idaho | Best Model: Last Value (Naive) | WAPE: 100.00% | Reliability: Very Low
+2026-07-30 14:43:51 | INFO | Processing entity 11 of 45: Illinois
+2026-07-30 14:43:51 | INFO | Entity: Illinois | Best Model: Holt Linear Trend | WAPE: 50.24% | Reliability: Very Low
+2026-07-30 14:43:51 | INFO | Processing entity 12 of 45: Indiana
+2026-07-30 14:43:51 | INFO | Entity: Indiana | Best Model: Simple Exponential Smoothing | WAPE: 64.28% | Reliability: Very Low
+2026-07-30 14:43:51 | INFO | Processing entity 13 of 45: Iowa
+2026-07-30 14:43:51 | INFO | Entity: Iowa | Best Model: Last Value (Naive) | WAPE: 100.00% | Reliability: Very Low
+2026-07-30 14:43:51 | INFO | Processing entity 14 of 45: Kansas
+2026-07-30 14:43:51 | INFO | Entity: Kansas | Best Model: Last Value (Naive) | WAPE: 100.00% | Reliability: Very Low
+2026-07-30 14:43:51 | INFO | Processing entity 15 of 45: Kentucky
+2026-07-30 14:43:51 | INFO | Entity: Kentucky | Best Model: Last Value (Naive) | WAPE: 86.40% | Reliability: Very Low
+2026-07-30 14:43:51 | INFO | Processing entity 16 of 45: Louisiana
+2026-07-30 14:43:51 | INFO | Entity: Louisiana | Best Model: Three Month Moving Average | WAPE: 100.00% | Reliability: Very Low
+2026-07-30 14:43:51 | INFO | Processing entity 17 of 45: Maine
+2026-07-30 14:43:51 | INFO | Entity: Maine | Best Model: Last Value (Naive) | WAPE: 100.00% | Reliability: Very Low
+2026-07-30 14:43:51 | INFO | Processing entity 18 of 45: Maryland
+2026-07-30 14:43:51 | INFO | Entity: Maryland | Best Model: Six Month Moving Average | WAPE: 96.13% | Reliability: Very Low
+2026-07-30 14:43:51 | INFO | Processing entity 19 of 45: Massachusetts
+2026-07-30 14:43:51 | INFO | Entity: Massachusetts | Best Model: Historical Average | WAPE: 81.70% | Reliability: Very Low
+2026-07-30 14:43:51 | INFO | Processing entity 20 of 45: Michigan
+2026-07-30 14:43:51 | INFO | Entity: Michigan | Best Model: Last Value (Naive) | WAPE: 94.79% | Reliability: Very Low
+2026-07-30 14:43:51 | INFO | Processing entity 21 of 45: Minnesota
+2026-07-30 14:43:51 | INFO | Entity: Minnesota | Best Model: Historical Average | WAPE: 66.55% | Reliability: Very Low
+2026-07-30 14:43:51 | INFO | Processing entity 22 of 45: Mississippi
+2026-07-30 14:43:51 | INFO | Entity: Mississippi | Best Model: Six Month Moving Average | WAPE: 98.89% | Reliability: Very Low
+2026-07-30 14:43:51 | INFO | Processing entity 23 of 45: Missouri
+2026-07-30 14:43:51 | INFO | Entity: Missouri | Best Model: Last Value (Naive) | WAPE: 100.00% | Reliability: Very Low
+2026-07-30 14:43:51 | INFO | Processing entity 24 of 45: Montana
+2026-07-30 14:43:51 | INFO | Entity: Montana | Best Model: Last Value (Naive) | WAPE: 100.00% | Reliability: Very Low
+2026-07-30 14:43:51 | INFO | Processing entity 25 of 45: Nebraska
+2026-07-30 14:43:51 | INFO | Entity: Nebraska | Best Model: Last Value (Naive) | WAPE: 99.08% | Reliability: Very Low
+2026-07-30 14:43:51 | INFO | Processing entity 26 of 45: Nevada
+2026-07-30 14:43:52 | INFO | Entity: Nevada | Best Model: Last Value (Naive) | WAPE: 118.16% | Reliability: Very Low
+2026-07-30 14:43:52 | INFO | Processing entity 27 of 45: New Hampshire
+2026-07-30 14:43:52 | INFO | Entity: New Hampshire | Best Model: Holt Linear Trend | WAPE: 96.15% | Reliability: Very Low
+2026-07-30 14:43:52 | INFO | Processing entity 28 of 45: New Jersey
+2026-07-30 14:43:52 | INFO | Entity: New Jersey | Best Model: Historical Average | WAPE: 94.25% | Reliability: Very Low
+2026-07-30 14:43:52 | INFO | Processing entity 29 of 45: New Mexico
+2026-07-30 14:43:52 | INFO | Entity: New Mexico | Best Model: Last Value (Naive) | WAPE: 62.44% | Reliability: Very Low
+2026-07-30 14:43:52 | INFO | Processing entity 30 of 45: New York
+2026-07-30 14:43:52 | INFO | Entity: New York | Best Model: Last Value (Naive) | WAPE: 57.06% | Reliability: Very Low
+2026-07-30 14:43:52 | INFO | Processing entity 31 of 45: North Carolina
+2026-07-30 14:43:52 | INFO | Entity: North Carolina | Best Model: Holt Linear Trend | WAPE: 88.93% | Reliability: Very Low
+2026-07-30 14:43:52 | INFO | Processing entity 32 of 45: Ohio
+2026-07-30 14:43:52 | INFO | Entity: Ohio | Best Model: Holt Linear Trend | WAPE: 47.97% | Reliability: Very Low
+2026-07-30 14:43:52 | INFO | Processing entity 33 of 45: Oklahoma
+2026-07-30 14:43:52 | INFO | Entity: Oklahoma | Best Model: Three Month Moving Average | WAPE: 97.28% | Reliability: Very Low
+2026-07-30 14:43:52 | INFO | Processing entity 34 of 45: Oregon
+2026-07-30 14:43:52 | INFO | Entity: Oregon | Best Model: Three Month Moving Average | WAPE: 105.06% | Reliability: Very Low
+2026-07-30 14:43:52 | INFO | Processing entity 35 of 45: Pennsylvania
+2026-07-30 14:43:52 | INFO | Entity: Pennsylvania | Best Model: Holt Linear Trend | WAPE: 53.01% | Reliability: Very Low
+2026-07-30 14:43:52 | INFO | Processing entity 36 of 45: Rhode Island
+2026-07-30 14:43:52 | INFO | Entity: Rhode Island | Best Model: Holt Linear Trend | WAPE: 91.87% | Reliability: Very Low
+2026-07-30 14:43:52 | INFO | Processing entity 37 of 45: South Carolina
+2026-07-30 14:43:52 | INFO | Entity: South Carolina | Best Model: Last Value (Naive) | WAPE: 100.00% | Reliability: Very Low
+2026-07-30 14:43:52 | INFO | Processing entity 38 of 45: South Dakota
+2026-07-30 14:43:52 | INFO | Entity: South Dakota | Best Model: Last Value (Naive) | WAPE: 100.00% | Reliability: Very Low
+2026-07-30 14:43:52 | INFO | Processing entity 39 of 45: Tennessee
+2026-07-30 14:43:52 | INFO | Entity: Tennessee | Best Model: Three Month Moving Average | WAPE: 58.63% | Reliability: Very Low
+2026-07-30 14:43:52 | INFO | Processing entity 40 of 45: Texas
+2026-07-30 14:43:53 | INFO | Entity: Texas | Best Model: Holt Linear Trend | WAPE: 35.87% | Reliability: Very Low
+2026-07-30 14:43:53 | INFO | Processing entity 41 of 45: Utah
+2026-07-30 14:43:53 | INFO | Entity: Utah | Best Model: Holt Linear Trend | WAPE: 96.57% | Reliability: Very Low
+2026-07-30 14:43:53 | INFO | Processing entity 42 of 45: Vermont
+2026-07-30 14:43:53 | INFO | Entity: Vermont | Best Model: Last Value (Naive) | WAPE: 100.00% | Reliability: Very Low
+2026-07-30 14:43:53 | INFO | Processing entity 43 of 45: Virginia
+2026-07-30 14:43:53 | INFO | Entity: Virginia | Best Model: Three Month Moving Average | WAPE: 86.16% | Reliability: Very Low
+2026-07-30 14:43:53 | INFO | Processing entity 44 of 45: Washington
+2026-07-30 14:43:53 | INFO | Entity: Washington | Best Model: Six Month Moving Average | WAPE: 51.16% | Reliability: Very Low
+2026-07-30 14:43:53 | INFO | Processing entity 45 of 45: Wisconsin
+2026-07-30 14:43:53 | INFO | Entity: Wisconsin | Best Model: Six Month Moving Average | WAPE: 71.29% | Reliability: Very Low
+2026-07-30 14:43:53 | INFO | Exported 270 rows to C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\output\forecast_results.csv
+2026-07-30 14:43:53 | INFO | Exported 315 rows to C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\output\model_comparison.csv
+2026-07-30 14:43:53 | INFO | Exported 6 rows to C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\output\best_model.csv
+2026-07-30 14:43:53 | INFO | Exported 45 rows to C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\output\state_summary.csv
+2026-07-30 14:43:53 | INFO | Exported 2032 rows to C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\output\monthly_preprocessed_data.csv
+2026-07-30 14:43:53 | INFO | Exported 4 rows to C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\output\skipped_entities.csv
+2026-07-30 14:43:53 | INFO | Exported 0 rows to C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\output\failed_entities.csv
+2026-07-30 14:43:54 | DEBUG | Plot saved: C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\output\plots\Alabama_forecast.png
+2026-07-30 14:43:54 | DEBUG | Plot saved: C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\output\plots\Arizona_forecast.png
+2026-07-30 14:43:54 | DEBUG | Plot saved: C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\output\plots\Arkansas_forecast.png
+2026-07-30 14:43:55 | DEBUG | Plot saved: C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\output\plots\California_forecast.png
+2026-07-30 14:43:56 | DEBUG | Plot saved: C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\output\plots\Colorado_forecast.png
+2026-07-30 14:43:56 | DEBUG | Plot saved: C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\output\plots\Connecticut_forecast.png
+2026-07-30 14:43:56 | DEBUG | Plot saved: C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\output\plots\Delaware_forecast.png
+2026-07-30 14:43:57 | DEBUG | Plot saved: C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\output\plots\Florida_forecast.png
+2026-07-30 14:43:57 | DEBUG | Plot saved: C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\output\plots\Georgia_forecast.png
+2026-07-30 14:43:57 | DEBUG | Plot saved: C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\output\plots\Idaho_forecast.png
+2026-07-30 14:43:58 | DEBUG | Plot saved: C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\output\plots\Illinois_forecast.png
+2026-07-30 14:43:58 | DEBUG | Plot saved: C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\output\plots\Indiana_forecast.png
+2026-07-30 14:43:59 | DEBUG | Plot saved: C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\output\plots\Iowa_forecast.png
+2026-07-30 14:43:59 | DEBUG | Plot saved: C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\output\plots\Kansas_forecast.png
+2026-07-30 14:43:59 | DEBUG | Plot saved: C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\output\plots\Kentucky_forecast.png
+2026-07-30 14:44:00 | DEBUG | Plot saved: C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\output\plots\Louisiana_forecast.png
+2026-07-30 14:44:00 | DEBUG | Plot saved: C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\output\plots\Maine_forecast.png
+2026-07-30 14:44:01 | DEBUG | Plot saved: C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\output\plots\Maryland_forecast.png
+2026-07-30 14:44:01 | DEBUG | Plot saved: C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\output\plots\Massachusetts_forecast.png
+2026-07-30 14:44:02 | DEBUG | Plot saved: C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\output\plots\Michigan_forecast.png
+2026-07-30 14:44:02 | DEBUG | Plot saved: C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\output\plots\Minnesota_forecast.png
+2026-07-30 14:44:03 | DEBUG | Plot saved: C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\output\plots\Mississippi_forecast.png
+2026-07-30 14:44:03 | DEBUG | Plot saved: C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\output\plots\Missouri_forecast.png
+2026-07-30 14:44:04 | DEBUG | Plot saved: C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\output\plots\Montana_forecast.png
+2026-07-30 14:44:04 | DEBUG | Plot saved: C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\output\plots\Nebraska_forecast.png
+2026-07-30 14:44:04 | DEBUG | Plot saved: C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\output\plots\Nevada_forecast.png
+2026-07-30 14:44:05 | DEBUG | Plot saved: C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\output\plots\New_Hampshire_forecast.png
+2026-07-30 14:44:05 | DEBUG | Plot saved: C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\output\plots\New_Jersey_forecast.png
+2026-07-30 14:44:06 | DEBUG | Plot saved: C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\output\plots\New_Mexico_forecast.png
+2026-07-30 14:44:06 | DEBUG | Plot saved: C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\output\plots\New_York_forecast.png
+2026-07-30 14:44:07 | DEBUG | Plot saved: C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\output\plots\North_Carolina_forecast.png
+2026-07-30 14:44:07 | DEBUG | Plot saved: C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\output\plots\Ohio_forecast.png
+2026-07-30 14:44:07 | DEBUG | Plot saved: C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\output\plots\Oklahoma_forecast.png
+2026-07-30 14:44:08 | DEBUG | Plot saved: C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\output\plots\Oregon_forecast.png
+2026-07-30 14:44:08 | DEBUG | Plot saved: C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\output\plots\Pennsylvania_forecast.png
+2026-07-30 14:44:08 | DEBUG | Plot saved: C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\output\plots\Rhode_Island_forecast.png
+2026-07-30 14:44:09 | DEBUG | Plot saved: C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\output\plots\South_Carolina_forecast.png
+2026-07-30 14:44:09 | DEBUG | Plot saved: C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\output\plots\South_Dakota_forecast.png
+2026-07-30 14:44:10 | DEBUG | Plot saved: C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\output\plots\Tennessee_forecast.png
+2026-07-30 14:44:10 | DEBUG | Plot saved: C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\output\plots\Texas_forecast.png
+2026-07-30 14:44:10 | DEBUG | Plot saved: C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\output\plots\Utah_forecast.png
+2026-07-30 14:44:11 | DEBUG | Plot saved: C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\output\plots\Vermont_forecast.png
+2026-07-30 14:44:11 | DEBUG | Plot saved: C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\output\plots\Virginia_forecast.png
+2026-07-30 14:44:12 | DEBUG | Plot saved: C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\output\plots\Washington_forecast.png
+2026-07-30 14:44:13 | DEBUG | Plot saved: C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\output\plots\Wisconsin_forecast.png
+2026-07-30 14:44:13 | INFO | Plots created: 45 | Plot failures: 0
+2026-07-30 14:44:13 | INFO | ================================================================================
+2026-07-30 14:44:13 | INFO | PIPELINE COMPLETED SUCCESSFULLY
+2026-07-30 14:44:13 | INFO | Successfully forecast entities: 45
+2026-07-30 14:44:13 | INFO | Files saved to: C:\Users\ritik\OneDrive\Desktop\Project\Enterprise Sales Forecasting Project\output
+2026-07-30 14:44:13 | INFO | ================================================================================
