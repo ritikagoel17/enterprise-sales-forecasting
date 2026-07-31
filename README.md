@@ -189,18 +189,18 @@ The dataset is used only to demonstrate the forecasting methodology with publicl
 ```text
 enterprise-sales-forecasting
 │
-├── dashboard
+├── dashboard/
 │   └── Sales Forecasting Model Project.pbix
 │
-├── data
+├── data/
 │   └── train.csv
 │
-├── images
+├── images/
 │   ├── Executive_Summary.png
 │   └── Forecast_Analysis.png
 │
-├── output
-│   ├── Plots
+├── output/
+│   ├── Plots/
 │   ├── best_model.csv
 │   ├── forecast_results.csv
 │   ├── model_comparison.csv
@@ -208,7 +208,7 @@ enterprise-sales-forecasting
 │   ├── skipped_entities.csv
 │   └── state_summary.csv
 │
-├── src
+├── src/
 │   └── enterprise_sales_forecasting.py
 │
 ├── .gitignore
@@ -216,7 +216,6 @@ enterprise-sales-forecasting
 ├── README.md
 └── requirements.txt
 ```
-
 ---
 
 # Dashboard
