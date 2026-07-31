@@ -274,14 +274,9 @@ python src/enterprise_sales_forecasting.py
 
 ---
 
-# Future Improvements
+## Limitations
 
-- Add ARIMA and SARIMA forecasting models.
-- Integrate Facebook Prophet forecasting.
-- Include external variables such as holidays and promotions.
-- Connect directly to SAP or SQL databases.
-- Deploy dashboards using Power BI Service.
-- Develop a web-based forecasting application.
+This project forecasts sales using historical sales patterns and compares multiple time-series models. It does not incorporate external business drivers such as promotions, holidays, pricing strategies, competitor activity, or market conditions. Integrating these variables would be a valuable enhancement for improving forecast accuracy in a production environment.
 
 ---
 
